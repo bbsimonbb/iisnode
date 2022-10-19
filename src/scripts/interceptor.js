@@ -207,4 +207,4 @@
 
 // run the original application entry point
 
-require(process.argv[1]);
+require('child_process').spawn(process.argv[0], process.argv.slice(1));
